@@ -1,9 +1,11 @@
+import Navbar from "./components/NavBar/Navbar"
+
 function App() {
 
   return (
-    <>
-      <h1>React Price Options</h1>
-    </>
+    <div className="container mx-auto">
+      <Navbar/>
+    </div>
   )
 }
 
