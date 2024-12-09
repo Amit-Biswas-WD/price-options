@@ -18,14 +18,14 @@ const Navbar = () => {
     
 
   return (
-    <div className="">
+    <div className="bg-gray-700 text-red-600 p-6">
         <div className="md:hidden" onClick={() => setOpen(!open)}>
             {
-                open ? <AiOutlineMenu className="text-2xl" /> : <IoCloseSharp className="text-2xl" />
+                open ? <AiOutlineMenu className="text-2xl text-accent" /> : <IoCloseSharp className="text-red-700 text-2xl" />
             }
             
         </div>        
-        <ul className="flex justify-between items-center">{
+        <ul className={`md:flex absolute md:static justify-between items-center bg-gray-700 px-6 text-accent duration-1000 ${open ? "top-12" : "-top-60"}`}>{
             routes.map(route => ( <Link key={route.id} route={route} ></Link> ))
         }</ul>
     </div>

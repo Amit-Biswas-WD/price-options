@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="container mx-auto">
       <Navbar/>
+      <p>My Name is Amit Biswas.</p>
     </div>
   )
 }
