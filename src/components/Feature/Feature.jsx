@@ -9,7 +9,7 @@ const Feature = ({feature}) => {
   )
 }
 
-Feature.PropTypes = {
+Feature.propTypes = {
     feature: PropTypes.string
 }
 
